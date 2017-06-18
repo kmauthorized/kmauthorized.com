@@ -5,7 +5,7 @@
     <meta name="font:Title" content="Arial" />
     <meta name="font:Body" content="Lucida Grande" />
     <meta name="font:Accent" content="Lucida Sans" />
-	
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
     {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
@@ -21,7 +21,7 @@
 	<meta property="og:title" content="About KM Authorized" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="http://kmauthorized.com/about" />
-	<meta property="og:image" content="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/icon_zps09c7a96d.png" />
+	<meta property="og:image" content="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/icon_zps09c7a96d.png" />
 	<meta property="og:site_name" content="About KM Authorized" />
 	<meta property="og:description" content="KM Authorized provides dedicated IT support and maintenance for businesses and individuals." />
 	<meta property="fb:app_id" content="105082882934209" />
@@ -29,19 +29,28 @@
 
 	<style type="text/css">
 		body {
-			margin: 0;
 			background-color: #ffffff;
 			font-family: 'Lucida Grande', Helvetica, sans-serif;
+			margin: 0;
 		}
 
 		body { font-size: 85%; }
-		html { font-size: 100%; } 
+		html { font-size: 100%; }
 
 		/* normal html changes */
-		p { margin: 1em 0; line-height: 1.6em; }
+		p {
+				line-height: 1.6em;
+				margin: 1em 0;
+			}
 
-		div { margin: 1em 0 0 0; padding: 0; }
-		div > *:first-child { margin-top: 0px !important; margin-bottom: 0px !important; }
+		div {
+					margin: 1em 0 0 0;
+					padding: 0;
+				}
+		div > *:first-child {
+													margin-bottom: 0 !important;
+													margin-top: 0 !important;
+												}
 
 		a {
 			color: #217be8;
@@ -52,7 +61,7 @@
 			color: #000000;
 			text-decoration: underline;
 		}
-		
+
 		a img { border-width: 0; }
 
 		h1 a {
@@ -61,16 +70,16 @@
 		}
 
 		h2 {
-			font: bold 1.5em 'Trebuchet MS', Helvetica, sans-serif;
 			color: #222222;
+			font: bold 1.5em 'Trebuchet MS', Helvetica, sans-serif;
 			letter-spacing: -1px;
 			margin: 0 0 1.5em 0;
 		}
 
 		ul, ol {
+			list-style-position: outside;
 			margin: 0 0 0 10px;
 			padding: 0 0 0 20px;
-			list-style-position: outside;
 		}
 
 		ul {
@@ -83,24 +92,31 @@
 			}
 
 		/* tables */
-		table { font-size: 11px; border: none; margin: 0 0 18px 0; border-spacing: 0px; line-height: 18px; text-align: left; }
+		table {
+						border: none;
+						border-spacing: 0;
+						font-size: 11px;
+						line-height: 18px;
+						margin: 0 0 18px 0;
+						text-align: left;
+					}
 		td { border: none; border-bottom: 1px solid #eee; padding: 4px; margin: 0 0 18px; vertical-align: top; }
 		th { text-align: left; font-weight: bold; padding: 4px; border: none; border-bottom: 1px solid #ccc; vertical-align: bottom; }
-		hr { margin-top: 30px; margin-bottom: 25px; }
+		hr { margin-bottom: 25px; margin-top: 30px; }
 
 		.strikethat, .strikethis {
 			text-decoration: line-through;
 		}
 
-		div.spacer {
+		.spacer {
 			margin: 10px 0 20px 0;
 		}
 
-		div.indent {
+		.indent {
 			padding-left: 10px;
 		}
 
-		p.small {
+		.small {
 			font-size: 10px;
 		}
 
@@ -111,23 +127,23 @@
 
 
 	/* Layout */
-		div#wrapper {
+		#wrapper {
 			width: 840px;
 			margin: auto auto auto 30px;
 			padding: 20px 0;
 			position: relative;
 		}
 
-		div#wrapper div#header {
+		#wrapper #header {
 			width: 800px;
 			height: 346px;
 			margin: auto;
 			padding: 0;
 			position: relative;
-			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/header_zpsb6d308d7.png) no-repeat center bottom;
+			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/header_zpsb6d308d7.png) no-repeat center bottom;
 		}
 
-		div#wrapper div#content {
+		#wrapper #content {
 			width: 600px;
 			margin: 20px 0;
 			padding: 0 220px 0 20px;
@@ -137,7 +153,7 @@
 */			z-index: 10;
 		}
 
-		div#wrapper div#content div#description {
+		#wrapper #content #description {
 			position: absolute;
 			top: 5px;
 			right: 20px;
@@ -146,7 +162,7 @@
 			width: 160px;
 		}
 
-		div#wrapper div#content div#rightcolumn, div#wrapper div#avatar, div#wrapper div#contact {
+		#wrapper #content #rightcolumn, #wrapper #avatar, #wrapper #contact {
 			position: absolute;
 			right: -210px;
 			width: 190px;
@@ -154,49 +170,49 @@
 			padding: 0;
 		}
 
-		div#wrapper div#content div#rightcolumn {
+		#wrapper #content #rightcolumn {
 			top: 210px;
 		}
 
-		div#wrapper #preload-01 {
+		#wrapper #preload-01 {
 			margin: 0;
-			background: url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/qr_code_contact_zps07cf0a53.png) no-repeat -9999px -9999px;
+			background: url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/qr_code_contact_zps07cf0a53.png) no-repeat -9999px -9999px;
 		}
-		
-		div#wrapper div#contact {
+
+		#wrapper #contact {
 			top: 48px;
 			right: -190px;
 		}
 
-		div#wrapper div#avatar {
+		#wrapper #avatar {
 			top: 127px;
 			right: -190px;
 		}
 
-		div#wrapper div#avatar a {
+		#wrapper #avatar a {
 			display: block;
 			width: 184px;
 			height: 184px;
-			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/avatar2_zpsa66e7bb4.jpg) no-repeat center;
+			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/avatar2_zpsa66e7bb4.jpg?raw=true) no-repeat center;
 /*			background: #fff url(http://www.gravatar.com/avatar/9d8958d35b9fbe0fc6c31b1aaf54ab8b?s=184) no-repeat center;*/
 		}
 
-		div#wrapper div#avatar a:hover {
+		#wrapper #avatar a:hover {
 			border-style: none;
-			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/qr_code_contact_zps07cf0a53.png) no-repeat center;
+			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/qr_code_contact_zps07cf0a53.png) no-repeat center;
 			z-index: 30;
 		}
 
-		div#wrapper div#contact a {
+		#wrapper #contact a {
 			display: block;
 			width: 190px;
 		}
 
-		div#wrapper div#contact a:hover {
+		#wrapper #contact a:hover {
 			text-decoration: none;
 		}
 
-		div#wrapper div#header div#facebook {
+		#wrapper #header #facebook {
 			width: 90px;
 			height: 20px;
 			margin: 0;
@@ -207,12 +223,12 @@
 			z-index: 20;
 		}
 
-		div#wrapper div#header div#facebook div {
+		#wrapper #header #facebook div {
 			margin: 0;
 			padding: 0;
 		}
 
-		div#wrapper div#header div#google {
+		#wrapper #header #google {
 			width: 90px;
 			height: 20px;
 			margin: 0;
@@ -223,7 +239,7 @@
 			z-index: 20;
 		}
 
-		div#wrapper div#header div#cse-search-form {
+		#wrapper #header #cse-search-form {
 			width: 300px;
 			height: 27px;
 			margin: 0;
@@ -235,7 +251,7 @@
 			overflow: hidden;
 		}
 
-		div#wrapper div#header div#paypal {
+		#wrapper #header #paypal {
 			width: 800px;
             height: 66px;
 			margin: 0;
@@ -246,7 +262,7 @@
 			z-index: 20;
 		}
 
-		div#wrapper div#header div#services {
+		#wrapper #header #services {
 			width: 440px;
 			margin: 0;
 			padding: 0 0 0 5px;
@@ -256,20 +272,20 @@
 			z-index: 20;
 		}
 
-			div#wrapper div#header div#services div#my_plugs {
+			#wrapper #header #services #my_plugs {
 				width: 135px;
 				margin: 0;
 				padding: 0 120px 0 0;
 				position: relative;
 			}
 
-				div#wrapper div#header div#services div#my_plugs div#left_plug {
+				#wrapper #header #services #my_plugs #left_plug {
 					margin: 0;
 					padding: 10px 15px;
 					border-right: solid 2px #217be8;
 				}
 
-				div#wrapper div#header div#services div#my_plugs div#middle_plug {
+				#wrapper #header #services #my_plugs #middle_plug {
 					position: absolute;
 					top: 0;
 					right: 0;
@@ -278,7 +294,7 @@
 					width: 90px;
 				}
 
-				div#wrapper div#header div#services div#my_plugs div#right_plug {
+				#wrapper #header #services #my_plugs #right_plug {
 					position: absolute;
 					top: 0;
 					right: -160px;
@@ -288,16 +304,16 @@
 					border-left: solid 2px #217be8;
 				}
 
-			div#wrapper div#header div#services div#guilt-free-it {
+			#wrapper #header #services #guilt-free-it {
 				padding: 0 0 0 40px;
 			}
-			
-				div#wrapper div#header div#services div#guilt-free-it ul {
+
+				#wrapper #header #services #guilt-free-it ul {
 					font-size: 95%;
 					color: #777777;
 				}
 
-		div#wrapper div#header div#client_quotes {
+		#wrapper #header #client_quotes {
 			width: 340px;
 			margin: 0;
 			padding: 0 10px 5px 0;
@@ -306,16 +322,16 @@
 			right: 10px;
 			z-index: 20;
 		}
-		
+
 
 	/* Look and Behavior */
-		div#wrapper div#contact {
+		#wrapper #contact {
 			letter-spacing: 2px;
 			text-align: center;
 			font-size: 140%;
 		}
 
-		div#wrapper div#header div#services {
+		#wrapper #header #services {
 			font-family: Helvetica, sans-serif;
 			font-size: 85%;
 			text-align: justify;
@@ -323,16 +339,16 @@
 			color: #555555;
 		}
 
-			div#wrapper div#header div#services ul {
+			#wrapper #header #services ul {
 				margin: 0;
 				text-align: left;
 			}
 
-		div#wrapper div#header div#client_quotes {
+		#wrapper #header #client_quotes {
 			color: #555555;
 		}
 
-		div#wrapper div#header div#client_quotes div.client_quote_text {
+		#wrapper #header #client_quotes div.client_quote_text {
 			font-family: Helvetica, sans-serif;
 			font-weight: bold;
 			font-size: 80%;
@@ -341,7 +357,7 @@
 			padding-left: 10px;
 		}
 
-		div#wrapper div#header #client_quotes div.client_source {
+		#wrapper #header #client_quotes div.client_source {
 			margin: 0;
 			padding: 0;
 			font-family: Helvetica, sans-serif;
@@ -349,18 +365,18 @@
 			text-align: right;
 		}
 
-		div#description {
+		#description {
 			font: Normal 95% Helvetica,sans-serif;
 			line-height: 1.8em;
 			color: #777777;
 		}
 
-		div#description {
+		#description {
 			text-align: right;
 			font-size: 95%;
 		}
 
-			div#description h2 {
+			#description h2 {
 				font-size: 16px;
 				color: #222222;
 				border-right: solid 5px #217be8;
@@ -370,31 +386,31 @@
 				padding: 0 5px 0 0;
 			}
 
-				div#description h2 a {
+				#description h2 a {
 					text-decoration: none;
 				}
 
-				div#description h2 a:hover {
+				#description h2 a:hover {
 					color: #222222;
 					text-decoration: underline;
 				}
 
-			div#description a {
+			#description a {
 				color: #222222;
 			}
 
-			div#description a:hover {
+			#description a:hover {
 				color: #7be821;
 				text-decoration: underline;
 			}
 
-			div#description ul, div#description ol {
+			#description ul, #description ol {
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
 			}
 
-			div#description li {
+			#description li {
 				margin: 0;
 				padding: 0;
 			}
@@ -405,44 +421,44 @@
 		}
 
 
-		/* Copyright */	
-			div#wrapper div#content div#description div#copyright {
+		/* Copyright */
+			#wrapper #content #description #copyright {
 				font-size: 90%;
 				margin: 0;
 				padding: 0;
 			}
-			
-			div#wrapper div#content div#description div#copyright div {
+
+			#wrapper #content #description #copyright div {
 				margin: 0;
 				font-size: 80%;
 			}
-		
 
-	/* Posts */	
-		div#wrapper div#content div.post {
+
+	/* Posts */
+		#wrapper #content div.post {
 			position: relative;
 			min-height: 100px;
 			margin-bottom: 70px;
 		}
 
-			div#wrapper div#content div.post div.copy {
+			#wrapper #content div.post div.copy {
 				color: #6e7173;
 				padding: 10px;
 				font-size: 13px;
 				line-height: 15px;
 			}
 
-				div#wrapper div#content div.post div.copy a {
+				#wrapper #content div.post div.copy a {
 					color: #6e7173;
 					text-decoration: underline;
 				}
 
-				div#wrapper div#content div.post div.copy p {
+				#wrapper #content div.post div.copy p {
 					margin: 10px 0 0 0;
 					padding: 0;
 				}
 
-				div#wrapper div#content div.post div.copy pre {
+				#wrapper #content div.post div.copy pre {
 					margin: 10px 0px 10px 0px;
 					padding: 10px;
 					background-color: #e6e6e6;
@@ -450,32 +466,32 @@
 					overflow: auto;
 				}
 
-				div#wrapper div#content div.post div.copy > p:first-child {
+				#wrapper #content div.post div.copy > p:first-child {
 					margin-top: 0;
 				}
 
-				div#wrapper div#content div.post div.copy img {
+				#wrapper #content div.post div.copy img {
 					max-width: 100%;
 				}
 
 
 		/* Post Title */
-			div#wrapper div#content div.post h2 {
+			#wrapper #content div.post h2 {
 			}
 
-			div#wrapper div#content div.post h2 a {
+			#wrapper #content div.post h2 a {
 				color: #222222;
 				text-decoration: none;
 			}
 
-			div#wrapper div#content div.post h2 a:hover {
+			#wrapper #content div.post h2 a:hover {
 				color: #217be8;
 				text-decoration: none;
 			}
 
 
 		/* Blockquotes */
-			div#wrapper div#content div.post blockquote {
+			#wrapper #content div.post blockquote {
 				font-style: italic;
 				border-left: solid 2px #555;
 				margin-left: 0;
@@ -484,32 +500,32 @@
 
 
 		/* Regular Post */
-			div#wrapper div#content div.post div.regular {
+			#wrapper #content div.post div.regular {
 				font-size: 100%;
 				color: #444444;
 			}
 
 
 		/* Footer */
-			div#wrapper div#content div#footer {
+			#wrapper #content #footer {
 				margin: 40px 0px 30px 0px;
 				text-align: center;
 				font-size: 16px;
 				font-weight: bold;
 			}
 
-				div#wrapper div#content div#footer a {
+				#wrapper #content #footer a {
 					text-decoration: none;
 					color: #222222;
 					margin: 0 20px;
 				}
 
-					div#wrapper div#content div#footer a:hover {
+					#wrapper #content #footer a:hover {
 						text-decoration: underline;
 						color: #7be821;
 					}
 
-		/* flickr */	
+		/* flickr */
 			.flickr_badge_image {text-align:left !important;}
 			#flickr_www {display:block; text-align:left; padding:0 10px 0 0 !important; font: 1.1em Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
 			#flickr_badge_uber_wrapper a:hover,#flickr_badge_uber_wrapper a:link,#flickr_badge_uber_wrapper a:active,#flickr_badge_uber_wrapper a:visited {
@@ -519,8 +535,8 @@
 			}
 			#flickr_badge_wrapper {}
 			#flickr_badge_wrapper img {margin-bottom: 20px; width: 190px; height: auto;}
-		
-			
+
+
 		{CustomCSS}
 
 	</style>
@@ -541,18 +557,18 @@
 			</div>
 			<div id="cse-search-form"></div>
 			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-			<script type="text/javascript"> 
+			<script type="text/javascript">
 			  google.load('search', '1', {language : 'en'});
 			  google.setOnLoadCallback(function() {
 				var customSearchControl = new google.search.CustomSearchControl('000232118565908663882:-2rmkrhjxns');
 				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 				var options = new google.search.DrawOptions();
-				options.enableSearchboxOnly("http://google.com/cse?cx=000232118565908663882:-2rmkrhjxns");    
+				options.enableSearchboxOnly("http://google.com/cse?cx=000232118565908663882:-2rmkrhjxns");
 				customSearchControl.draw('cse-search-form', options);
 			  }, true);
 			</script>
 			<a href="http://kmauthorized.com">
-				<img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/logo_v9_216_clear_zpse9418b10.png" width="216" alt="KM Authorized" />
+				<img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/logo_v9_216_clear_zpse9418b10.png" width="216" alt="KM Authorized" />
 			</a>
 			<div id="client_quotes">
 				<div class="client_quote_text">
@@ -597,12 +613,12 @@
 
 		<div id="content">
 			<div id="description">
-				<a href="http://feeds.keegoid.com/kmauthorized" title="RSS feed" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/feed-icon-16x16_zpsfe083fa6.png" alt="RSS" /></a>
-				<a href="http://twitter.com/kmauthorized" title="follow me on twitter" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/twitter_zpse1d9ea36.png" alt="Twitter" /></a>
-				<a href="http://www.facebook.com/kmauthorized" title="like KM Authorized on Facebook" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/facebook_zps86a8020f.png" alt="Facebook" /></a>
-				<a href="http://www.linkedin.com/in/keeganmullaney" title="follow my career on LinkedIn" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/linkedin_zps177537dd.png" alt="LinkedIn" /></a>
-				<a href="http://www.tumblr.com/follow/{Name}" title="follow me on Tumblr" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/tumblr_zps9b0b8bf6.png" alt="Tumblr" /></a>
-				<a href="http://klout.com/keegoid" title="see my klout" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/klout_zpsea234eb0.png" alt="Klout" /></a><br/>
+				<a href="http://feeds.keegoid.com/kmauthorized" title="RSS feed" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/feed-icon-16x16_zpsfe083fa6.png" alt="RSS" /></a>
+				<a href="http://twitter.com/kmauthorized" title="follow me on twitter" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/twitter_zpse1d9ea36.png" alt="Twitter" /></a>
+				<a href="http://www.facebook.com/kmauthorized" title="like KM Authorized on Facebook" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/facebook_zps86a8020f.png" alt="Facebook" /></a>
+				<a href="http://www.linkedin.com/in/keeganmullaney" title="follow my career on LinkedIn" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/linkedin_zps177537dd.png" alt="LinkedIn" /></a>
+				<a href="http://www.tumblr.com/follow/{Name}" title="follow me on Tumblr" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/tumblr_zps9b0b8bf6.png" alt="Tumblr" /></a>
+				<a href="http://klout.com/keegoid" title="see my klout" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/klout_zpsea234eb0.png" alt="Klout" /></a><br/>
 				{block:HasPages}
 					{block:Pages}
 						<a href="{URL}">{Label}</a><br/>
@@ -737,10 +753,10 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
+
       ga('create', 'UA-3900165-42', 'kmauthorized.com');
       ga('send', 'pageview');
-    
+
     </script>
 
 </body>
