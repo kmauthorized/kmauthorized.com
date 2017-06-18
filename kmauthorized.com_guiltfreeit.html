@@ -8,7 +8,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
-    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <meta name="description" content="{MetaDescription}" />
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.keegoid.com/kmauthorized" />
@@ -21,7 +21,7 @@
 	<meta property="og:title" content="About KM Authorized" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="http://kmauthorized.com/about" />
-	<meta property="og:image" content="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/icon_zps09c7a96d.png" />
+	<meta property="og:image" content="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/icon_zps09c7a96d.png?raw=true" />
 	<meta property="og:site_name" content="About KM Authorized" />
 	<meta property="og:description" content="KM Authorized provides dedicated IT support and maintenance for businesses and individuals." />
 	<meta property="fb:app_id" content="105082882934209" />
@@ -134,13 +134,14 @@
 			position: relative;
 		}
 
-		#wrapper #header {
+		div#wrapper div#header {
 			width: 800px;
-			height: 346px;
+			/*height: 346px;*/
+			height: 270px;
 			margin: auto;
 			padding: 0;
 			position: relative;
-			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/header_zpsb6d308d7.png) no-repeat center bottom;
+			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/header_zpsb6d308d7.png?raw=true) no-repeat center bottom;
 		}
 
 		#wrapper #content {
@@ -176,7 +177,7 @@
 
 		#wrapper #preload-01 {
 			margin: 0;
-			background: url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/qr_code_contact_zps07cf0a53.png) no-repeat -9999px -9999px;
+			background: url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/qr_code_contact_zps07cf0a53.png?raw=true) no-repeat -9999px -9999px;
 		}
 
 		#wrapper #contact {
@@ -199,7 +200,7 @@
 
 		#wrapper #avatar a:hover {
 			border-style: none;
-			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/qr_code_contact_zps07cf0a53.png) no-repeat center;
+			background: #fff url(https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/qr_code_contact_zps07cf0a53.png?raw=true) no-repeat center;
 			z-index: 30;
 		}
 
@@ -267,7 +268,7 @@
 			margin: 0;
 			padding: 0 0 0 5px;
 			position: absolute;
-			top: 151px;
+			top: 72px;
 			left: 0;
 			z-index: 20;
 		}
@@ -318,7 +319,7 @@
 			margin: 0;
 			padding: 0 10px 5px 0;
 			position: absolute;
-			top: 151px;
+			top: 72px;
 			right: 10px;
 			z-index: 20;
 		}
@@ -345,7 +346,7 @@
 			}
 
 		#wrapper #header #client_quotes {
-			color: #555555;
+			color: #555555
 		}
 
 		#wrapper #header #client_quotes div.client_quote_text {
@@ -568,7 +569,7 @@
 			  }, true);
 			</script>
 			<a href="http://kmauthorized.com">
-				<img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/logo_v9_216_clear_zpse9418b10.png" width="216" alt="KM Authorized" />
+				<img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/logo_v9_216_clear_zpse9418b10.png?raw=true" width="216" alt="KM Authorized" />
 			</a>
 			<div id="client_quotes">
 				<div class="client_quote_text">
@@ -613,12 +614,12 @@
 
 		<div id="content">
 			<div id="description">
-				<a href="http://feeds.keegoid.com/kmauthorized" title="RSS feed" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/feed-icon-16x16_zpsfe083fa6.png" alt="RSS" /></a>
-				<a href="http://twitter.com/kmauthorized" title="follow me on twitter" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/twitter_zpse1d9ea36.png" alt="Twitter" /></a>
-				<a href="http://www.facebook.com/kmauthorized" title="like KM Authorized on Facebook" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/facebook_zps86a8020f.png" alt="Facebook" /></a>
-				<a href="http://www.linkedin.com/in/keeganmullaney" title="follow my career on LinkedIn" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/linkedin_zps177537dd.png" alt="LinkedIn" /></a>
-				<a href="http://www.tumblr.com/follow/{Name}" title="follow me on Tumblr" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/tumblr_zps9b0b8bf6.png" alt="Tumblr" /></a>
-				<a href="http://klout.com/keegoid" title="see my klout" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/klout_zpsea234eb0.png" alt="Klout" /></a><br/>
+				<a href="http://feeds.keegoid.com/kmauthorized" title="RSS feed" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/feed-icon-16x16_zpsfe083fa6.png?raw=true" alt="RSS" /></a>
+				<a href="http://twitter.com/kmauthorized" title="follow me on twitter" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/twitter_zpse1d9ea36.png?raw=true" alt="Twitter" /></a>
+				<a href="http://www.facebook.com/kmauthorized" title="like KM Authorized on Facebook" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/facebook_zps86a8020f.png?raw=true" alt="Facebook" /></a>
+				<a href="http://www.linkedin.com/in/keeganmullaney" title="follow my career on LinkedIn" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/linkedin_zps177537dd.png?raw=true" alt="LinkedIn" /></a>
+				<a href="http://www.tumblr.com/follow/{Name}" title="follow me on Tumblr" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/tumblr_zps9b0b8bf6.png?raw=true" alt="Tumblr" /></a>
+				<a href="http://klout.com/keegoid" title="see my klout" target="_blank"><img src="https://github.com/kmauthorized/kmauthorized.com/blob/master/assets/img/klout_zpsea234eb0.png?raw=true" alt="Klout" /></a><br/>
 				{block:HasPages}
 					{block:Pages}
 						<a href="{URL}">{Label}</a><br/>

@@ -8,7 +8,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
-    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <meta name="description" content="{MetaDescription}" />
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.keegoid.com/kmauthorized" />
@@ -120,7 +120,8 @@
 
 		div#wrapper div#header {
 			width: 800px;
-			height: 346px;
+			/*height: 346px;*/
+			height: 270px;
 			margin: auto;
 			padding: 0;
 			position: relative;
@@ -251,7 +252,7 @@
 			margin: 0;
 			padding: 0 0 0 5px;
 			position: absolute;
-			top: 151px;
+			top: 72px;
 			left: 0;
 			z-index: 20;
 		}
@@ -302,7 +303,7 @@
 			margin: 0;
 			padding: 0 10px 5px 0;
 			position: absolute;
-			top: 151px;
+			top: 72px;
 			right: 10px;
 			z-index: 20;
 		}
