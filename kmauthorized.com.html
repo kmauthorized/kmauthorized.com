@@ -1,0 +1,1520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0" xml:lang="en">
+<head>
+    <!-- DEFAULT COLORS -->
+    <meta name="color:Background" content="#ffffff"/>
+	<meta name="color:ButtonBackground" content="#eeeeee"/>
+	<meta name="color:Borders" content="#217be8"/>
+	<meta name="color:Text" content="#444444"/>
+	<meta name="color:HeaderText" content="#555555"/>
+	<meta name="color:GuiltFreeITText" content="#777777"/>
+	<meta name="color:ClientQuoteBorder" content="#217be8"/>
+	<meta name="color:ClientSourceText" content="#777777"/>
+	<meta name="color:Link" content="#217be8"/>
+	<meta name="color:LinkHover" content="#000000"/>
+	<meta name="color:InlineLink" content="#217be8"/>
+	<meta name="color:PermalinkBackground" content="#000000"/>
+	<meta name="color:Title" content="#222222"/>
+	<meta name="color:TitleLink" content="#222222"/>
+	<meta name="color:TitleLinkHover" content="#217be8"/>
+	<meta name="color:Menu" content="#ffffff"/>
+	<meta name="color:MenuBackground" content="#82988c"/>
+	<meta name="color:MenuLink" content="#ffffff"/>
+	<meta name="color:MenuLinkHover" content="#9fb0a8"/>
+	<meta name="color:Description" content="#777777"/>
+	<meta name="color:DescriptionLink" content="#222222"/>
+	<meta name="color:DescriptionLinkHover" content="#7be821"/>
+	<meta name="color:BlockquoteBorder" content="#555555"/>
+	<meta name="color:PhotoLink" content="#217be8"/>
+	<meta name="color:PhotoLinkHover" content="#000000"/>
+	<meta name="color:Quote" content="#888888"/>
+	<meta name="color:QuoteLink" content="#217be8"/>
+	<meta name="color:QuoteBorder" content="#217be8"/>
+	<meta name="color:QuoteSource" content="#777777"/>
+	<meta name="color:QuoteSourceLink" content="#217be8"/>
+	<meta name="color:ConversationBackgroundOdd" content="#f4f4f4"/>
+	<meta name="color:ConversationBackgroundEven" content="#e8e8e8"/>
+	<meta name="color:ConversationBorder" content="#bbbbbb"/>
+	<meta name="color:ConversationText" content="#555555"/>
+	<meta name="color:ConversationUser1" content="#c00"/>
+	<meta name="color:ConversationUser2" content="#00c"/>
+	<meta name="color:ConversationUser3" content="#0a0"/>
+	<meta name="color:Date" content="#cccccc"/>
+	<meta name="color:DateBlock" content="#217be8"/>
+	<meta name="color:DateBlockText" content="#ffd5d5"/>
+	<meta name="color:Tags" content="#aaaaaa"/>
+	<meta name="color:TagLink" content="#222222"/>
+	<meta name="color:TagLinkHover" content="#7be821"/>
+	<meta name="color:TimeAgo" content="#aaaaaa"/>
+	<meta name="color:PostNotes" content="#666666"/>
+	<meta name="color:PostNotesBackground" content="#eaeaea"/>
+	<meta name="color:Footer" content="#777777"/>
+	<meta name="color:FooterLink" content="#222222"/>
+	<meta name="color:FooterLinkHover" content="#7be821"/>
+	<!-- END DEFAULT COLORS -->
+
+	<!-- tumblr -->
+    <meta name="font:Title" content="Arial" />
+    <meta name="font:Body" content="Lucida Grande" />
+    <meta name="font:Accent" content="Lucida Sans" />
+	<meta name="if:EnableJumpPagination" content="1" />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
+    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.keegoid.com/kmauthorized" />
+
+	<!-- validations -->
+	<meta name="google-site-verification" content="meLE0P1Hc8ptzGnt4YEIbTEvyx07r5GyfWtTtMK0srI" />
+	<meta name="msvalidate.01" content="39F441DE6D32B190D4931E26FE427B1E" />
+
+	<!-- facebook Like button properties -->
+	<meta property="og:title" content="{Title}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://kmauthorized.com" />
+	<meta property="og:image" content="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/icon_zps09c7a96d.png" />
+	<meta property="og:site_name" content="KM Authorized" />
+	<meta property="og:description" content="KM Authorized provides dedicated IT support and maintenance for businesses and individuals." />
+	<meta property="fb:app_id" content="105082882934209" />
+	<meta property="fb:admins" content="19714831" />
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: {color:Background};
+			font-family: 'Lucida Grande', Helvetica, sans-serif;
+		}
+
+		body { font-size: 85%; }
+		html { font-size: 100%; } 
+
+		/* normal html changes */
+		p { margin: 1em 0; line-height: 1.6em; }
+
+		div { margin: 1em 0 0 0; padding: 0; }
+		div > *:first-child { margin-top: 0px !important; margin-bottom: 0px !important; }
+
+		a {
+			color: {color:Link};
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: {color:LinkHover};
+			text-decoration: underline;
+		}
+		
+		a img { border-width: 0; }
+
+		h1 a {
+			color: {color:TitleLink};
+			text-decoration: none;
+		}
+
+		h2 {
+			font: bold 1.5em 'Trebuchet MS', Helvetica, sans-serif;
+			color: {color:Title};
+			letter-spacing: -1px;
+			margin: 0 0 1.5em 0;
+		}
+
+		ul, ol {
+			margin: 0 0 0 10px;
+			padding: 0 0 0 20px;
+			list-style-position: outside;
+		}
+
+		ul {
+			list-style-type: disc;
+		}
+
+			ul li, ol li {
+				margin: 0 0 2px 5px;
+				padding: 0;
+			}
+
+		/* tables */
+		table { font-size: 11px; border: none; margin: 0 0 18px 0; border-spacing: 0px; line-height: 18px; text-align: left; }
+		td { border: none; border-bottom: 1px solid #eee; padding: 4px; margin: 0 0 18px; vertical-align: top; }
+		th { text-align: left; font-weight: bold; padding: 4px; border: none; border-bottom: 1px solid #ccc; vertical-align: bottom; }
+		hr { margin-top: 30px; margin-bottom: 25px; }
+
+		.strikethat, .strikethis {
+			text-decoration: line-through;
+		}
+
+		div.spacer {
+			margin: 10px 0 20px 0;
+		}
+
+		div.indent {
+			padding-left: 10px;
+		}
+
+		p.small {
+			font-size: 10px;
+		}
+
+		.super {
+			vertical-align: super;
+			font-size: 6px;
+		}
+
+		div.posterous_quote_citation, div.p_see_full_gallery { font-size: 90%; }
+
+	/* Layout */
+		div#wrapper {
+			width: 840px;
+			margin: auto auto auto 30px;
+			padding: 20px 0;
+			position: relative;
+		}
+
+		div#wrapper div#header {
+			width: 800px;
+			/*height: 346px;*/
+			height: 270px;
+			margin: auto;
+			padding: 0;
+			position: relative;
+			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/header_zpsb6d308d7.png) no-repeat center bottom;
+		}
+
+		div#wrapper div#content {
+			width: 600px;
+			margin: 20px 0;
+			padding: 0 220px 0 20px;
+			position: relative;
+/*			border-left: dashed 1px {color:Borders};
+			border-right: dashed 1px {color:Borders};
+*/			z-index: 10;
+		}
+
+		div#wrapper div#content div#description {
+			position: absolute;
+			top: 5px;
+			right: 20px;
+			margin: 0;
+			padding: 0;
+			width: 160px;
+		}
+
+		div#wrapper div#content div#rightcolumn, div#wrapper div#avatar, div#wrapper div#contact {
+			position: absolute;
+			right: -210px;
+			width: 190px;
+			margin: 0;
+			padding: 0;
+		}
+
+		div#wrapper div#content div#rightcolumn {
+			top: 0;
+		}
+
+			div#wrapper div#content div#description .ask_and_submit {
+				margin: 0;
+				padding: 0;
+				display: none;
+				{block:AskEnabled}display: block;{/block:AskEnabled}
+			}
+
+		div#wrapper #preload-01 {
+			margin: 0;
+			background: url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/qr_code_contact_zps07cf0a53.png) no-repeat -9999px -9999px;
+		}
+		
+		div#wrapper div#contact {
+			top: 48px;
+			right: -197px;
+		}
+
+		div#wrapper div#avatar {
+			top: 99px;
+			right: -210px;
+		}
+
+		div#wrapper div#avatar a {
+			display: block;
+			width: 173px;
+			height: 173px;
+/*			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/avatar2_zpsa66e7bb4.jpg) no-repeat center;*/
+			background: #fff url(https://en.gravatar.com/userimage/27319432/05821dc3c03f935d6628d71faedeebd5.jpg?size=173) no-repeat center;
+		}
+
+		div#wrapper div#avatar a:hover {
+			border-style: none;
+			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/qr_code_contact_zps07cf0a53.png) no-repeat center;
+			z-index: 30;
+		}
+
+		div#wrapper div#contact a {
+			display: block;
+			width: 190px;
+		}
+
+		div#wrapper div#contact a:hover {
+			text-decoration: none;
+		}
+
+		div#wrapper div#header div#facebook {
+			width: 90px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 30px;
+			left: 290px;
+			z-index: 20;
+		}
+
+		div#wrapper div#header div#facebook div {
+			margin: 0;
+			padding: 0;
+		}
+
+		div#wrapper div#header div#google {
+			width: 90px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 30px;
+			left: 410px;
+			z-index: 20;
+		}
+
+		div#wrapper div#header div#cse-search-form {
+			width: 300px;
+			height: 27px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 22px;
+			right: -34px;
+			z-index: 20;
+			overflow: hidden;
+		}
+
+		div#wrapper div#header div#paypal {
+			width: 800px;
+            height: 66px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 77px;
+			left: 0;
+			z-index: 20;
+		}
+
+		div#wrapper div#header div#services {
+			width: 440px;
+			margin: 0;
+			padding: 0 0 0 5px;
+			position: absolute;
+			/*top: 151px;*/
+			top: 72px;
+			left: 0;
+			z-index: 20;
+		}
+
+			div#wrapper div#header div#services div#my_plugs {
+				width: 135px;
+				margin: 0;
+				padding: 0 120px 0 0;
+				position: relative;
+			}
+
+				div#wrapper div#header div#services div#my_plugs div#left_plug {
+					margin: 0;
+					padding: 10px 15px;
+					border-right: solid 2px {color:Borders};
+				}
+
+				div#wrapper div#header div#services div#my_plugs div#middle_plug {
+					position: absolute;
+					top: 0;
+					right: 0;
+					margin: 0;
+					padding: 10px 15px;
+					width: 90px;
+				}
+
+				div#wrapper div#header div#services div#my_plugs div#right_plug {
+					position: absolute;
+					top: 0;
+					right: -160px;
+					width: 130px;
+					margin: 0;
+					padding: 10px 15px;
+					border-left: solid 2px {color:Borders};
+				}
+
+			div#wrapper div#header div#services div#guilt-free-it {
+				padding: 0 0 0 40px;
+			}
+			
+				div#wrapper div#header div#services div#guilt-free-it ul {
+					font-size: 95%;
+					color: {color:GuiltFreeITText};
+				}
+
+		div#wrapper div#header div#client_quotes {
+			width: 340px;
+			margin: 0;
+			padding: 0 10px 5px 0;
+			position: absolute;
+			top: 72px;
+			right: 10px;
+			z-index: 20;
+		}
+		
+		div#wrapper div#content div.post div.question {
+			position: relative;
+			margin: 0 0 15px 0;
+			padding: 15px 20px;
+		}
+
+			div#wrapper div#content div.post div.question div.nipple {
+				position: absolute;
+				bottom: -7px;
+				left: 30px;
+				width: 13px;
+				height: 7px;
+				background: #f1f1f1 url('http://assets.tumblr.com/themes/redux/ask-mask.png');
+			}
+
+		div#wrapper div#content div.post div.asker_container {
+			margin: 0 0 20px 24px;
+		}
+
+			div#wrapper div#content div.post div.asker_container img {
+				margin: 0 12px -7px 0;
+			}
+
+		div#wrapper div#content div.post div.asker_container a.asker {
+		}
+
+
+	/* Look and Behavior */
+		div#wrapper div#contact {
+			letter-spacing: 2px;
+			text-align: center;
+			font-size: 140%;
+		}
+
+		div#wrapper div#header div#services {
+			font-family: Helvetica, sans-serif;
+			font-size: 85%;
+			text-align: justify;
+			letter-spacing: 1px;
+			color: {color:HeaderText};
+		}
+
+			div#wrapper div#header div#services ul {
+				margin: 0;
+				text-align: left;
+			}
+
+		div#wrapper div#header div#client_quotes {
+			color: {color:HeaderText};
+		}
+
+		div#wrapper div#header div#client_quotes div.client_quote_text {
+			font-family: Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 80%;
+			font-style: italic;
+			border-left: solid 5px {color:ClientQuoteBorder};
+			padding-left: 10px;
+		}
+
+		div#wrapper div#header #client_quotes div.client_source {
+			margin: 0;
+			padding: 0;
+			font-family: Helvetica, sans-serif;
+			font-size: 85%;
+			text-align: right;
+		}
+
+		div#description, div#rightcolumn {
+			font: Normal 95% Helvetica,sans-serif;
+			line-height: 1.8em;
+			color: {color:Description};
+		}
+
+		div#rightcolumn {
+			text-align: center;
+		}
+
+		div#description {
+			text-align: right;
+			font-size: 95%;
+		}
+
+			div#description h2 {
+				font-size: 16px;
+				color: {color:Title};
+				border-right: solid 5px {color:Borders};
+				border-bottom: solid 1px {color:Borders};
+				letter-spacing: normal;
+				margin: 5px 0;
+				padding: 0 5px 0 0;
+			}
+
+				div#description h2 a {
+					text-decoration: none;
+				}
+
+				div#description h2 a:hover {
+					color: {color:DescriptionLink};
+					text-decoration: underline;
+				}
+
+			div#description a, div#rightcolumn a {
+				color: {color:DescriptionLink};
+			}
+
+			div#description a:hover, div#rightcolumn a:hover {
+				color: {color:DescriptionLinkHover};
+				text-decoration: underline;
+			}
+
+			div#description ul, div#description ol {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+
+			div#description li {
+				margin: 0;
+				padding: 0;
+			}
+
+		div.tag_page, div.search_page {
+			position: relative;
+			margin-bottom: 20px;
+			padding-bottom: 5px;
+			width: 100%;
+			border-bottom: solid 1px {color:Borders};
+		}
+
+			div.tag_page h2, div.search_page h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 22px;
+				font-weight: Bold;
+				color: {color:Title};
+				letter-spacing: -1px;
+				line-height: 22px;
+			}
+
+		div.search_page {
+		}
+
+			div.search_page h2 {
+			}
+
+		div.search {
+			color: {color:Text};
+			line-height: 17px;
+		}
+
+
+		/* Copyright */	
+			div#wrapper div#content div#description div#copyright {
+				font-size: 90%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			div#wrapper div#content div#description div#copyright div {
+				margin: 0;
+				font-size: 80%;
+			}
+		
+
+	/* Posts */	
+		div#wrapper div#content div.post {
+			position: relative;
+			min-height: 100px;
+			margin-bottom: 70px;
+		}
+
+			div#wrapper div#content div.post div.copy {
+				color: #6e7173;
+				padding: 10px;
+				font-size: 13px;
+				line-height: 15px;
+			}
+
+				div#wrapper div#content div.post div.copy a {
+					color: #6e7173;
+					text-decoration: underline;
+				}
+
+				div#wrapper div#content div.post div.copy p {
+					margin: 10px 0 0 0;
+					padding: 0;
+				}
+
+				div#wrapper div#content div.post div.copy pre {
+					margin: 10px 0px 10px 0px;
+					padding: 10px;
+					background-color: #e6e6e6;
+					font: normal 11px Courier, monospace;
+					overflow: auto;
+				}
+
+				div#wrapper div#content div.post div.copy > p:first-child {
+					margin-top: 0;
+				}
+
+				div#wrapper div#content div.post div.copy img {
+					max-width: 100%;
+				}
+
+		/* Permalinks */
+			div#wrapper div#content div.post img.permalink {
+				width: 14px;
+				height: 13px;
+				border-width: 0px;
+				background-color: {color:PermalinkBackground};
+				display: none;
+				position: absolute;
+				left: -20px;
+				top: 5px;
+				z-index: 10;
+			}
+
+			div#wrapper div#content div.post:hover img.permalink {
+				display: inline;
+			}
+
+		/* Post Title */
+			div#wrapper div#content div.post h2 {
+			}
+
+			div#wrapper div#content div.post h2 a {
+				color: {color:TitleLink};
+				text-decoration: none;
+			}
+
+			div#wrapper div#content div.post h2 a:hover {
+				color: {color:TitleLinkHover};
+				text-decoration: none;
+			}
+
+		/* Post Meta */
+			div#wrapper div#content div.post div.post_meta {
+				margin: 10px 0 0 0;
+				padding: 0;
+				background-color: {color:ButtonBackground};
+				border: dashed 1px {color:Borders};
+				text-align: center;
+			}
+
+				div#wrapper div#content div.post div.post_meta a {
+					color: {color:TitleLink};
+				}
+
+				div#wrapper div#content div.post div.post_meta a:hover {
+					color: {color:TitleLinkHover};
+				}
+
+			/* Meta Block */
+				div#wrapper div#content div.post div.post_meta div.meta_block {
+					float: left;
+					width: 380px;
+					margin: 0;
+					padding: 16px 0 0 10px;
+					position: relative;
+					font: Normal 80% Helvetica, sans-serif;
+					text-align: left;
+				}
+
+			/* Post Date */
+				div#wrapper div#content div.post div.post_meta div.meta_block .date {
+					color: {color:Link};
+					text-transform: uppercase;
+				}
+
+			/* Tags */
+				div#wrapper div#content div.post div.post_meta .tags {
+					color: {color:Tags};
+				}
+
+			/* Sharing */
+				div#wrapper div#content div.post div.sharebuttons {
+					padding: 15px 0 10px 0;
+					margin: 0 0 0 390px;
+				}
+
+		/* Blockquotes */
+			div#wrapper div#content div.post blockquote {
+				font-style: italic;
+				border-left: solid 2px {color:BlockquoteBorder};
+				margin-left: 0;
+				padding-left: 10px;
+			}
+
+
+		/* Regular Post */
+			div#wrapper div#content div.post div.regular {
+				font-size: 100%;
+				color: {color:Text};
+			}
+
+
+		/* Question and Answer */
+		div#wrapper div#content div.post div.question {
+			color: #494949;
+			font-size: 16px;
+			font-weight: bold;
+			background: #f1f1f1;
+		}
+
+
+		/* Photo Post */
+			div#wrapper div#content div.post div.caption {
+				font-size: 100%;
+				color: {color:Text};
+				line-height: 17px;
+				margin: 5px 0;
+			}
+
+				div#wrapper div#content div.post div.caption a {
+					color: {color:PhotoLink};
+				}
+
+				div#wrapper div#content div.post div.caption a:hover {
+					color: {color:PhotoLinkHover};
+				}
+
+
+		/* Quote Post */
+			div#wrapper div#content div.post div.quote {
+			}
+
+				div#wrapper div#content div.post div.quote div.quote_text {
+					font-family: Helvetica, sans-serif;
+					font-weight: bold;
+					color: {color:Quote};
+					border-left: solid 5px {color:QuoteBorder};
+					padding-left: 10px;
+				}
+
+					div#wrapper div#content div.post div.quote div.quote_text span.short {
+						font-size: 36px;
+						line-height: 40px;
+						letter-spacing: -1px;
+					}
+
+					div#wrapper div#content div.post div.quote div.quote_text span.medium {
+						font-size: 25px;
+						line-height: 27px;
+						letter-spacing: -1px;
+					}
+
+					div#wrapper div#content div.post div.quote div.quote_text span.long {
+						font-size: 16px;
+						line-height: 20px;
+					}
+
+					div#wrapper div#content div.post div.quote div.quote_text a {
+						color: {color:QuoteLink};
+					}
+
+				div#wrapper div#content div.post div.quote div.source {
+					font-size: 100%;
+					color: {color:QuoteSource};
+					text-align: right;
+				}
+
+					div#wrapper div#content div.post div.quote div.source a {
+						color: {color:QuoteSourceLink};
+					}
+
+
+		/* Link Post */
+			div#wrapper div#content div.post div.link {
+				font-size: 100%;
+				color: {color:Text};
+				line-height: 17px;
+			}
+
+				div#wrapper div#content div.post div.link h2 {
+					font-size: 14px;
+				}
+
+					div#wrapper div#content div.post div.link h2 a {
+						color: {color:Link};
+					}
+
+					div#wrapper div#content div.post div.link h2 a:hover {
+						color: {color:LinkHover};
+					}
+
+				div#wrapper div#content div.post div.link div.description {
+					margin: 5px 0;
+				}
+
+
+		/* Conversation Post */
+			div#wrapper div#content div.post div.conversation ul {
+				list-style-image: none;
+				list-style-type: none;
+				margin: 0 0 5px 0;
+				padding: 0 0 0 1px;
+				border-left: solid 5px {color:ConversationBorder};
+			}
+
+				div#wrapper div#content div.post div.conversation ul li {
+					font-size: 100%;
+					padding: 4px 10px 4px 8px;
+					color: {color:ConversationText};
+					margin-bottom: 1px;
+				}
+
+					div#wrapper div#content div.post div.conversation ul li span.label {
+						font-weight: bold;
+					}
+
+					div#wrapper div#content div.post div.conversation ul li span.user_1 {
+						color: {color:ConversationUser1};
+					}
+
+					div#wrapper div#content div.post div.conversation ul li span.user_2 {
+						color: {color:ConversationUser2};
+					}
+
+					div#wrapper div#content div.post div.conversation ul li span.user_3 {
+						color: {color:ConversationUser3};
+					}
+
+					div#wrapper div#content div.post div.conversation ul li.odd {
+						background-color: {color:ConversationBackgroundOdd};
+					}
+
+					div#wrapper div#content div.post div.conversation ul li.even {
+						background-color: {color:ConversationBackgroundEven};
+					}
+
+
+		/* Audio Post */
+			div#wrapper div#content div.post div.audio {
+				width: 600px;
+				margin: auto;
+			}
+
+				div#wrapper div#content div.post div.audio div.caption {
+					margin: 5px 0;
+				}
+
+
+		/* Video Post */
+			div#wrapper div#content div.post div.video {
+				width: 600px;
+				margin: auto;
+			}
+
+				div#wrapper div#content div.post div.video div.caption {
+					margin: 5px 0;
+				}
+
+
+		/* Post Notes */
+			div#wrapper div#content div.post .notecontainer {
+				background: {color:PostNotesBackground};
+				font-family: {font:Accent};
+				font-size: 11px;
+				color: {color:PostNotes};
+				margin-top: 10px;
+				margin-bottom: -10px;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes {
+				padding: 0px 0 5px 0;
+				list-style-type: none;
+				font-size: 11px;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes li.note {
+				padding: 10px 10px 0 10px;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes li.note img.avatar {
+				vertical-align: -4px;
+				margin-right: 10px;
+				width: 16px;
+				height: 16px;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes li.note span.action {
+				font-weight: normal;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes li.note .answer_content {
+				font-weight: normal;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes li.note blockquote {
+				border-left: 2px solid {color:PostNotes};
+				padding: 4px 10px;
+				margin: 10px 0px 0px 25px;
+			}
+
+			div#wrapper div#content div.post .notecontainer ol.notes li.note blockquote a {
+				text-decoration: none;
+			}
+
+
+		/* Footer */
+			div#wrapper div#content div#footer {
+				margin: 40px 0px 30px 0px;
+				text-align: center;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+				div#wrapper div#content div#footer a {
+					text-decoration: none;
+					color: {color:FooterLink};
+					margin: 0 20px;
+				}
+
+					div#wrapper div#content div#footer a:hover {
+						text-decoration: underline;
+						color: {color:FooterLinkHover};
+					}
+
+		/* Pagination */
+			div#wrapper div#content div#footer div#navigation.jump_pagination {}
+
+			div#wrapper div#content div#footer div#navigation.jump_pagination a {
+				margin: 0 0 0 5px;
+			}
+
+			div#wrapper div#content div#footer div#navigation.jump_pagination .current_page {
+				color: {color:FooterLink};
+				background-color: {color:ButtonBackground};
+				border: dashed 1px {color:Borders};
+				padding: 3px 8px;
+				margin: 0 0 0 5px;
+				cursor: default;
+			}
+
+			div#wrapper div#content div#footer div#navigation.jump_pagination .jump_page {}
+
+		/* flickr */	
+			.flickr_badge_image {text-align:left !important;}
+			#flickr_www {display:block; text-align:left; padding:0 10px 0 0 !important; font: 1.1em Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+			#flickr_badge_uber_wrapper a:hover,#flickr_badge_uber_wrapper a:link,#flickr_badge_uber_wrapper a:active,#flickr_badge_uber_wrapper a:visited {
+				text-decoration: none !important;
+				background: inherit !important;
+				color: {color:Link};
+			}
+			#flickr_badge_wrapper {}
+			#flickr_badge_wrapper img {margin-bottom: 20px; width: 190px; height: auto;}
+		
+			
+		{CustomCSS}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+
+		{block:IndexPage}
+		<div id="preload-01"></div>
+		<div id="contact"><h4>503-512-9090</h4></div>
+		<div id="avatar"><a href="http://en.gravatar.com/kmauthorizedllc" title="" target="_blank"></a></div>
+		{/block:IndexPage}
+
+		<div id="header">
+<!--			<div id="facebook">
+				<div id="fb-root"></div>
+				<div class="fb-like" data-href="http://kmauthorized.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+			</div>
+			<div id="google">
+				<g:plusone size="medium" href="http://kmauthorized.com"></g:plusone>
+			</div>
+-->
+			<div id="cse-search-form"></div>
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+			<script type="text/javascript"> 
+			  google.load('search', '1', {language : 'en'});
+			  google.setOnLoadCallback(function() {
+				var customSearchControl = new google.search.CustomSearchControl('000232118565908663882:xumgcisrqo4');
+				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+				var options = new google.search.DrawOptions();
+				options.enableSearchboxOnly("http://google.com/cse?cx=000232118565908663882:xumgcisrqo4");
+				customSearchControl.draw('cse-search-form', options);
+			  }, true);
+			</script>
+			<a href="http://kmauthorized.com">
+				<img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/logo_v9_216_clear_zpse9418b10.png" width="216" alt="KM Authorized" />
+			</a>
+			<div id="client_quotes">
+				<div class="client_quote_text">
+					<big>&#147;</big><span>Keegan is extremely trustworthy. When working with an IT individual, I can't think of anything more important. He is also very competent, which is the other &#39;must&#39; for an IT guy.</span><big>&#148;</big>
+				</div>
+				<div class="client_source">
+					&ndash;&nbsp;Brooke Knight, Knight Financial
+				</div>
+				<div class="client_quote_text">
+					<big>&#147;</big><span>Keegan is an amazing resource for my business. He maintains my computers so they function with very few problems...I can't recommend his services highly enough. He has completely eliminated my IT hassles.</span><big>&#148;</big>
+				</div>
+				<div class="client_source">
+					&ndash;&nbsp;Eric Dunlap, Dunlap Mortgage<br/>
+					<a href="http://www.linkedin.com/in/keeganmullaney" target="_blank">more...</a>
+				</div>
+			</div>
+			<div id="services">
+				<div id="my_plugs">
+					<div id="left_plug"><span>Slow and buggy computer?</span><br/><span>Is it stressful to use?</span></div>
+					<div id="middle_plug"><span>Worried about viruses, malware, or identity theft?</span></div>
+					<div id="right_plug"><span>Give yourself peace of mind. Hand your stress to a trusted IT pro.</span></div>
+				</div>
+				<div id="guilt-free-it">
+					<p><big>&#147;</big><span>Guilt-free IT, hand tech stress to me</span><big>&#148;</big> includes:</p>
+					<ul>
+						<li>regular computer maintenance and monitoring for problems</li>
+						<li>dedicated support when you need it</li>
+						<li>no hourly fees, call as often as needed</li>
+					</ul>
+				</div>
+			</div>
+<!--            <div id="paypal">
+                <script type="text/javascript" data-pp-pubid="cc1db601f1" data-pp-placementtype="800x66"> (function (d, t) {
+                "use strict";
+                var s = d.getElementsByTagName(t)[0], n = d.createElement(t);
+                n.src = "//paypal.adtag.where.com/merchant.js";
+                s.parentNode.insertBefore(n, s);
+                }(document, "script"));
+                </script>
+            </div>-->
+		</div>
+
+		<div id="content">
+			{block:IndexPage}
+			<div id="rightcolumn">
+                <div class="spacer" style="margin-left: -16px;">
+                    <div id="networkpluscertification">
+                        <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=QVD9H3RH1PB4SRNC" title="CompTIA Network+ CE" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/NetworkPlus%20Logo%20Certified%20CE_zpsmr98gae1.png" alt="CompTIA Network+ CE" width="180" /></a>
+                    </div>
+                </div>
+				<div class="spacer" style="margin-left: -16px;">
+			        <div id="serverpluscertification">
+			            <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=9E6GCQHNKDV455G7" title="CompTIA Server+" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/ServerPlus%20Logo%20Certified_zpsqijedyh4.png" alt="CompTIA Server+" width="180" /></a>
+			        </div>
+                </div>
+			    <div class="spacer" style="margin-left: -16px; margin-top: -6px">
+			        <div id="apluscertification">
+			            <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=BNJZVTBNK3E15GSL" title="CompTIA A+ CE" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/Aplus%20Logo%20Certified%20CE_zpshjklk4r7.png" alt="CompTIA A+ CE" width="180" /></a>
+			        </div>
+			    </div>
+<!--					<a href="http://www.mozilla.com/en-US/plugincheck/">
+						<img id="mozilla_plugin_checker_badge" src="http://www.mozilla.com/img/covehead/plugincheck/wb/en-US/180_150/loading.png" width="180" height="150" alt="We can check your plugins and stuff" />
+					</a>
+				</div>
+
+				&nbsp;
+
+				<div class="spacer">
+					<div id="flickr_badge_uber_wrapper">
+						<a href="http://www.flickr.com/photos/keeganmullaney/" id="flickr_www"><strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span> photos</strong></a>
+						<div id="flickr_badge_wrapper">
+							<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&amp;display=random&amp;size=m&amp;layout=v&amp;source=user_tag&amp;user=24471235%40N06&amp;tag=kmauthorized"></script>
+						</div>
+					</div>
+				</div>
+-->
+				&nbsp;
+
+				<div style="margin: -10px 0 0 0;">
+					<script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script type="text/javascript">
+					new TWTR.Widget({
+					  version: 2,
+					  type: 'profile',
+					  rpp: 4,
+					  interval: 6000,
+					  width: 190,
+					  height: 500,
+					  theme: {
+						shell: {
+						  background: '{color:Background}',
+						  color: '{color:Title}'
+						},
+						tweets: {
+						  background: '{color:Background}',
+						  color: '{color:Text}',
+						  links: '{color:Link}'
+						}
+					  },
+					  features: {
+						scrollbar: false,
+						loop: false,
+						live: true,
+						hashtags: true,
+						timestamp: true,
+						avatars: false,
+						behavior: 'all'
+					  }
+					}).render().setUser('kmauthorized').start();
+					</script>
+				</div>
+			</div>
+			{/block:IndexPage}
+			
+			<div id="description">
+				<a href="http://feeds.keegoid.com/kmauthorized" title="RSS feed" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/feed-icon-16x16_zpsfe083fa6.png" alt="RSS" /></a>
+				<a href="http://twitter.com/kmauthorized" title="follow me on twitter" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/twitter_zpse1d9ea36.png" alt="Twitter" /></a>
+				<a href="http://www.facebook.com/kmauthorized" title="like KM Authorized on Facebook" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/facebook_zps86a8020f.png" alt="Facebook" /></a>
+				<a href="http://www.linkedin.com/in/keeganmullaney" title="follow my career on LinkedIn" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/linkedin_zps177537dd.png" alt="LinkedIn" /></a>
+				<a href="http://www.tumblr.com/follow/{Name}" title="follow me on Tumblr" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/tumblr_zps9b0b8bf6.png" alt="Tumblr" /></a>
+				<a href="http://klout.com/keegoid" title="see my klout" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/klout_zpsea234eb0.png" alt="Klout" /></a><br/>
+				{block:HasPages}
+					{block:Pages}
+						<a href="{URL}">{Label}</a><br/>
+					{/block:Pages}
+				{/block:HasPages}
+				<a href="/mobile" title="for devices with small screens">mobile friendly</a><br/>
+				<a href="https://1drv.ms/b/s!AigPKWxWLMn0hpN-YDC71J7qbz-mGA" title="Keegan's Resume">Keegan's Resume</a><br/>
+				<a href="/archive">archive</a><br/>
+    			<a href="http://hosting.kmauthorized.com/" title="I will manage your domain and DNS settings">domain hosting</a><br/>
+<!--				<a href="http://keegoid.com/tech/">recommended tech</a>
+                {block:AskEnabled}
+				<div class="ask_and_submit">
+                    <a href="/ask">{AskLabel}</a>
+                </div>
+				{/block:AskEnabled}
+-->
+				<div id="google_translate_element"></div>
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+					  new google.translate.TranslateElement({
+						pageLanguage: 'en'
+					  }, 'google_translate_element');
+					}
+				</script>
+				<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+				{block:IndexPage}
+					{block:Description}
+					{Description}
+					{/block:Description}
+				{/block:IndexPage}
+				<br/>
+
+				{block:IndexPage}
+				<h2 id="acs">Cloud Services</h2>
+				<div class="spacer">
+					<img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/google-apps-reseller-logo_zpsbbd56187.jpg" alt="Google Apps Reseller" /><br/><br/>
+					<a href="http://www.backblaze.com/partner/af1147" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/bzad_125x125_red4_zpsd3e682a1.gif" alt="backblaze" /></a><br/><br/>
+					<a href="https://lastpass.com/f?3202156" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/lastpasslogo_zpsb0141fcb.png" alt="LastPass" width="160" /></a><br/><br/>
+					<a href='https://kmauthorized.freshbooks.com/refer/www' style='background-color: transparent;'><img src='http://www.freshbooks.com/images/banners/freshbooks-200x200.png' width='160' border='0' alt='FreshBooks' /></a><br/><br/>
+<!--					<a href="http://rapportive.com" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/rapportive_zps0e6f5191.png" alt="Rapportive" width="160" /></a><br/><br/>-
+					<a href="http://www.boomeranggmail.com/referral_download.html?ref=m6er7" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/boomerang_zpsa945bc00.png" alt="Boomerang" width="160" /></a><br/><br/>
+					<a href="http://eepurl.com/-qN" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/mailchimp_logo_zps49a8d57b.gif" alt="MailChimp" /></a><br/><br/>-->
+<!--					<a href="http://www.batchblue.com/" target="_blank"><img src="http://www.batchblue.com/badges/batchbadge-network.png" width="125" height="140" alt="My business is buzzing!" /></a><br/><br/>-->
+					<a href="https://www.dropbox.com/referrals/NTc2Njc5ODM5" target="_blank"><img src="https://www.dropbox.com/static/11631/images/logo.png" alt="Dropbox" width="160" /></a>
+				</div>
+
+				&nbsp;
+
+				<h2>Feedback</h2>
+				<div class="spacer">
+					<a href="http://failin.gs/profile/kmauthorized" title="How I can improve? (anonymous)" target="_blank">failin.gs</a><br/>
+				</div>
+
+				&nbsp;
+
+				<h2>Pay KM Authorized</h2>
+				<div class="spacer">
+					<a href="http://kmauthorized.freshbooks.com" title="contact Keegan for login info" target="_blank">FreshBooks</a><br/>
+				</div>
+
+				&nbsp;
+				{/block:IndexPage}
+
+				<h2>Top Tags</h2>
+				<div class="spacer">
+					<ol>
+						<li><a href="/tagged/computing">computing</a></li>
+						<li><a href="/tagged/Google">Google</a></li>
+						<li><a href="/tagged/technology">technology</a></li>
+						<li><a href="/tagged/health">health</a></li>
+						<li><a href="/tagged/software">software</a></li>
+						<li><a href="/tagged/features">features</a></li>
+						<li><a href="/tagged/communication">communication</a></li>
+						<li><a href="/tagged/tools">tools</a></li>
+						<li><a href="/tagged/environment">environment</a></li>
+						<li><a href="/tagged/web%20presence">web presence</a></li>
+					</ol>
+				</div>
+
+<!--				{block:IndexPage}
+				&nbsp;
+
+				<h2 id="os">Misc Stuff</h2>
+				<div id="otherstuff" class="spacer">
+					<ol>
+						<li><a href="http://eepurl.com/dvORP" target="_blank">Guilt-free IT Reminders</a></li>
+						<li><a href="http://twitter.com/#!/kmauthorized/lists" target="_blank">Twitter Lists</a></li>
+						<li><a href="http://secure.newegg.com/WishList/PublicWishDetail.aspx?WishListNumber=13232165" target="_blank">Current PC</a></li>
+					</ol>
+				</div>
+				{/block:IndexPage}-->
+
+				&nbsp;
+
+				<div id="copyright">
+					&copy; {CopyrightYears}<br/>
+					<a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a>
+					<div xmlns:cc="http://creativecommons.org/ns#" about="http://kmauthorized.com/">
+						<a rel="cc:attributionURL" property="cc:attributionName" href="http://kmauthorized.com">kmauthorized.com</a> / <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>
+					</div>
+					<div>
+						Valid&nbsp;&nbsp;<a href="http://validator.w3.org/check?uri=referer" target="_blank">XHTML</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS</a>
+					</div>
+				</div>
+			</div>
+
+			
+			{block:TagPage}
+			<div class="tag_page">
+				<h2>Posts tagged &quot;{Tag}&quot;</h2>
+			</div>
+			{/block:TagPage}
+
+
+			{block:Posts}
+			<div class="post">
+
+				<a href="{Permalink}"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/permalink_right_zpsbce0f171.gif" class="permalink" alt="permalink"/></a>
+
+				{block:Text}
+				<div class="regular">
+					{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					<p>{Body}</p>
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Text}
+
+				{block:Answer}
+				<div class="question">
+					<div class="nipple"></div>
+					{Question}
+				</div>
+				<div class="asker_container">
+					<img src="{AskerPortraitURL-24}" />
+					{Asker}
+				</div>
+				<div class="copy">{Answer}</div>
+				{/block:Answer}
+
+				{block:Photo}
+				<div class="photo">
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					{LinkOpenTag}<img src="{PhotoURL-600}" alt="{PhotoAlt}"/>{LinkCloseTag}
+					{block:Caption}
+					<div class="caption">
+						{Caption}
+					</div>
+					{/block:Caption}
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Photo}
+
+				{block:Photoset}
+				<div class="photo">
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					{Photoset-600}
+					{block:Caption}
+					<div class="caption">
+						{Caption}
+					</div>
+					{/block:Caption}
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Photoset}
+
+				{block:Quote}
+				<div class="quote">
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					<div class="quote_text">
+						<big>&#147;</big>{Quote}<big>&#148;</big>
+					</div>
+					{block:Source}
+					<div class="source">
+						&ndash;&nbsp;{Source}                                
+					</div>
+					{/block:Source}
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Quote}
+
+				{block:Link}
+				<div class="link">
+					<h2><a href="{URL}" target="{Target}">{Name}</a></h2>
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					<div class="description">
+						{Description}
+					</div>
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Link}
+
+				{block:Conversation}
+				<div class="conversation">
+					{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					<ul>
+						{block:Lines}
+						<li class="{Alt}">
+							{block:Label}<span class="label">{Label}</span>{/block:Label}
+							{Line}
+						</li>
+						{/block:Lines}
+					</ul>
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Conversation}
+
+				{block:Audio}
+				<div class="audio">
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					{AudioPlayerBlack}
+					{block:Caption}
+					<div class="caption">
+						{Caption}
+					</div>
+					{/block:Caption}
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Audio}
+
+				{block:Video}
+				<div class="video">
+					<div class="post_meta">
+						<div class="meta_block">
+							<span class="date"><a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></span><br/>
+							<span class="tags">{block:HasTags}<span>tags: </span>{block:Tags}&nbsp;&nbsp;&nbsp;<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</span>
+						</div>
+						<div class="sharebuttons">
+							<span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_email_large' st_summary='{Body}'></span>
+							<span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' st_summary='{Body}'></span>
+						</div>
+						<div style="clear: both; margin: 0;"></div>
+					</div>
+					{Video-600}
+					{block:Caption}
+					<div class="caption">
+						{Caption}
+					</div>
+					{/block:Caption}
+					{block:PermalinkPage}
+					<fb:comments href="{Permalink}" num_posts="5" width="600"></fb:comments>
+					{/block:PermalinkPage}
+				</div>
+				{/block:Video}
+
+				{block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
+			</div>
+			{/block:Posts}
+
+
+			<div id="footer">
+				<div id="navigation" {block:IfEnableJumpPagination}class="jump_pagination"{/block:IfEnableJumpPagination}>
+				{block:Pagination}
+
+					{block:PreviousPage}
+						<a href="{URL}/page/1">First</a>&nbsp;&nbsp;&nbsp;
+						<a href="{PreviousPage}">{lang:Previous}</a>
+					{/block:PreviousPage}
+
+					{block:IfEnableJumpPagination}
+						{block:JumpPagination length="9"}
+							{block:CurrentPage}
+								<span class="current_page">{PageNumber}</span>
+							{/block:CurrentPage}
+
+							{block:JumpPage}
+								<a href="{URL}" class="jump_page">{PageNumber}</a>
+							{/block:JumpPage}
+						{/block:JumpPagination}
+					{/block:IfEnableJumpPagination}
+
+					{block:NextPage}
+						<a href="{NextPage}">{lang:Next}</a>&nbsp;&nbsp;&nbsp;
+						<a href="{URL}/page/{TotalPages}">Last</a>
+					{/block:NextPage}
+
+				{/block:Pagination}
+
+				{block:DayPagination}
+					{block:PreviousDayPage}
+						<a href="{PreviousDayPage}">&#171; {ShortMonth} {DayOfMonth}</a>
+					{/block:PreviousDayPage}
+
+					{block:NextDayPage}
+						<a href="{NextDayPage}">{ShortMonth} {DayOfMonth} &#187;</a>
+					{/block:NextDayPage}
+				{/block:DayPagination}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- facebook comments and Like button -->
+	<script type="text/javascript">
+		(function(d){
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/all.js#appId=105082882934209&xfbml=1";
+		d.getElementsByTagName('head')[0].appendChild(js);
+		}(document));
+	</script>
+
+	<!-- google +1 -->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	
+	<!-- sharethis -->
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher:'a47ae4a3-0612-4cab-b9ab-622b468c7055'});</script>
+    
+    <!-- bill me later -->
+    <script type="text/javascript" data-pp-pubid="cc1db601f1" data-pp-placementtype="120x90"> (function (d, t) {
+    "use strict";
+    var s = d.getElementsByTagName(t)[0], n = d.createElement(t);
+    n.src = "//paypal.adtag.where.com/merchant.js";
+    s.parentNode.insertBefore(n, s);
+    }(document, "script"));
+    </script>
+
+    <!-- google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-3900165-42', 'kmauthorized.com');
+      ga('send', 'pageview');
+    
+    </script>
+
+    
+</body>
+</html>

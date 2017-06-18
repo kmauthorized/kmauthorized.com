@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0" xml:lang="en">
+<head>
+	<!-- tumblr -->
+    <meta name="font:Title" content="Arial" />
+    <meta name="font:Body" content="Lucida Grande" />
+    <meta name="font:Accent" content="Lucida Sans" />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
+    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.keegoid.com/kmauthorized" />
+
+	<!-- validations -->
+	<meta name="google-site-verification" content="meLE0P1Hc8ptzGnt4YEIbTEvyx07r5GyfWtTtMK0srI" />
+	<meta name="msvalidate.01" content="39F441DE6D32B190D4931E26FE427B1E" />
+
+	<!-- facebook Like button properties -->
+	<meta property="og:title" content="About KM Authorized" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://kmauthorized.com/about" />
+	<meta property="og:image" content="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/icon_zps09c7a96d.png" />
+	<meta property="og:site_name" content="About KM Authorized" />
+	<meta property="og:description" content="KM Authorized provides dedicated IT support and maintenance for businesses and individuals." />
+	<meta property="fb:app_id" content="105082882934209" />
+	<meta property="fb:admins" content="19714831" />
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: #ffffff;
+			font-family: 'Lucida Grande', Helvetica, sans-serif;
+		}
+
+		body { font-size: 85%; }
+		html { font-size: 100%; } 
+
+		/* normal html changes */
+		p { margin: 1em 0; line-height: 1.6em; }
+
+		div { margin: 1em 0 0 0; padding: 0; }
+		div > *:first-child { margin-top: 0px !important; margin-bottom: 0px !important; }
+
+		a {
+			color: #217be8;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #000000;
+			text-decoration: underline;
+		}
+		
+		a img { border-width: 0; }
+
+		h1 a {
+			color: #222222;
+			text-decoration: none;
+		}
+
+		h2 {
+			font: bold 1.5em 'Trebuchet MS', Helvetica, sans-serif;
+			color: #222222;
+			letter-spacing: -1px;
+			margin: 0 0 1.5em 0;
+		}
+
+		ul, ol {
+			margin: 0 0 0 10px;
+			padding: 0 0 0 20px;
+			list-style-position: outside;
+		}
+
+		ul {
+			list-style-type: disc;
+		}
+
+			ul li, ol li {
+				margin: 0 0 2px 5px;
+				padding: 0;
+			}
+
+		/* tables */
+		table { font-size: 11px; border: none; margin: 0 0 18px 0; border-spacing: 0px; line-height: 18px; text-align: left; }
+		td { border: none; border-bottom: 1px solid #eee; padding: 4px; margin: 0 0 18px; vertical-align: top; }
+		th { text-align: left; font-weight: bold; padding: 4px; border: none; border-bottom: 1px solid #ccc; vertical-align: bottom; }
+		hr { margin-top: 30px; margin-bottom: 25px; }
+
+		.strikethat, .strikethis {
+			text-decoration: line-through;
+		}
+
+		div.spacer {
+			margin: 10px 0 20px 0;
+		}
+
+		div.indent {
+			padding-left: 10px;
+		}
+
+		p.small {
+			font-size: 10px;
+		}
+
+		.super {
+			vertical-align: super;
+			font-size: 6px;
+		}
+
+
+	/* Layout */
+		div#wrapper {
+			width: 840px;
+			margin: auto auto auto 30px;
+			padding: 20px 0;
+			position: relative;
+		}
+
+		div#wrapper div#header {
+			width: 800px;
+			height: 346px;
+			margin: auto;
+			padding: 0;
+			position: relative;
+			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/header_zpsb6d308d7.png) no-repeat center bottom;
+		}
+
+		div#wrapper div#content {
+			width: 600px;
+			margin: 20px 0;
+			padding: 0 220px 0 20px;
+			position: relative;
+/*			border-left: dashed 1px #217be8;
+			border-right: dashed 1px #217be8;
+*/			z-index: 10;
+		}
+
+		div#wrapper div#content div#description {
+			position: absolute;
+			top: 5px;
+			right: 20px;
+			margin: 0;
+			padding: 0;
+			width: 160px;
+		}
+
+		div#wrapper div#content div#rightcolumn, div#wrapper div#avatar, div#wrapper div#contact {
+			position: absolute;
+			right: -210px;
+			width: 190px;
+			margin: 0;
+			padding: 0;
+		}
+
+		div#wrapper div#content div#rightcolumn {
+			top: 210px;
+		}
+
+		div#wrapper #preload-01 {
+			margin: 0;
+			background: url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/qr_code_contact_zps07cf0a53.png) no-repeat -9999px -9999px;
+		}
+		
+		div#wrapper div#contact {
+			top: 48px;
+			right: -190px;
+		}
+
+		div#wrapper div#avatar {
+			top: 127px;
+			right: -190px;
+		}
+
+		div#wrapper div#avatar a {
+			display: block;
+			width: 184px;
+			height: 184px;
+			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/avatar2_zpsa66e7bb4.jpg) no-repeat center;
+/*			background: #fff url(http://www.gravatar.com/avatar/9d8958d35b9fbe0fc6c31b1aaf54ab8b?s=184) no-repeat center;*/
+		}
+
+		div#wrapper div#avatar a:hover {
+			border-style: none;
+			background: #fff url(http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/qr_code_contact_zps07cf0a53.png) no-repeat center;
+			z-index: 30;
+		}
+
+		div#wrapper div#contact a {
+			display: block;
+			width: 190px;
+		}
+
+		div#wrapper div#contact a:hover {
+			text-decoration: none;
+		}
+
+		div#wrapper div#header div#facebook {
+			width: 90px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 30px;
+			left: 290px;
+			z-index: 20;
+		}
+
+		div#wrapper div#header div#facebook div {
+			margin: 0;
+			padding: 0;
+		}
+
+		div#wrapper div#header div#google {
+			width: 90px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 30px;
+			left: 410px;
+			z-index: 20;
+		}
+
+		div#wrapper div#header div#cse-search-form {
+			width: 300px;
+			height: 27px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 22px;
+			right: -34px;
+			z-index: 20;
+			overflow: hidden;
+		}
+
+		div#wrapper div#header div#paypal {
+			width: 800px;
+            height: 66px;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 77px;
+			left: 0;
+			z-index: 20;
+		}
+
+		div#wrapper div#header div#services {
+			width: 440px;
+			margin: 0;
+			padding: 0 0 0 5px;
+			position: absolute;
+			top: 151px;
+			left: 0;
+			z-index: 20;
+		}
+
+			div#wrapper div#header div#services div#my_plugs {
+				width: 135px;
+				margin: 0;
+				padding: 0 120px 0 0;
+				position: relative;
+			}
+
+				div#wrapper div#header div#services div#my_plugs div#left_plug {
+					margin: 0;
+					padding: 10px 15px;
+					border-right: solid 2px #217be8;
+				}
+
+				div#wrapper div#header div#services div#my_plugs div#middle_plug {
+					position: absolute;
+					top: 0;
+					right: 0;
+					margin: 0;
+					padding: 10px 15px;
+					width: 90px;
+				}
+
+				div#wrapper div#header div#services div#my_plugs div#right_plug {
+					position: absolute;
+					top: 0;
+					right: -160px;
+					width: 130px;
+					margin: 0;
+					padding: 10px 15px;
+					border-left: solid 2px #217be8;
+				}
+
+			div#wrapper div#header div#services div#guilt-free-it {
+				padding: 0 0 0 40px;
+			}
+			
+				div#wrapper div#header div#services div#guilt-free-it ul {
+					font-size: 95%;
+					color: #777777;
+				}
+
+		div#wrapper div#header div#client_quotes {
+			width: 340px;
+			margin: 0;
+			padding: 0 10px 5px 0;
+			position: absolute;
+			top: 151px;
+			right: 10px;
+			z-index: 20;
+		}
+		
+
+	/* Look and Behavior */
+		div#wrapper div#contact {
+			letter-spacing: 2px;
+			text-align: center;
+			font-size: 140%;
+		}
+
+		div#wrapper div#header div#services {
+			font-family: Helvetica, sans-serif;
+			font-size: 85%;
+			text-align: justify;
+			letter-spacing: 1px;
+			color: #555555;
+		}
+
+			div#wrapper div#header div#services ul {
+				margin: 0;
+				text-align: left;
+			}
+
+		div#wrapper div#header div#client_quotes {
+			color: #555555;
+		}
+
+		div#wrapper div#header div#client_quotes div.client_quote_text {
+			font-family: Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 80%;
+			font-style: italic;
+			border-left: solid 5px #217be8;
+			padding-left: 10px;
+		}
+
+		div#wrapper div#header #client_quotes div.client_source {
+			margin: 0;
+			padding: 0;
+			font-family: Helvetica, sans-serif;
+			font-size: 85%;
+			text-align: right;
+		}
+
+		div#description {
+			font: Normal 95% Helvetica,sans-serif;
+			line-height: 1.8em;
+			color: #777777;
+		}
+
+		div#description {
+			text-align: right;
+			font-size: 95%;
+		}
+
+			div#description h2 {
+				font-size: 16px;
+				color: #222222;
+				border-right: solid 5px #217be8;
+				border-bottom: solid 1px #217be8;
+				letter-spacing: normal;
+				margin: 5px 0;
+				padding: 0 5px 0 0;
+			}
+
+				div#description h2 a {
+					text-decoration: none;
+				}
+
+				div#description h2 a:hover {
+					color: #222222;
+					text-decoration: underline;
+				}
+
+			div#description a {
+				color: #222222;
+			}
+
+			div#description a:hover {
+				color: #7be821;
+				text-decoration: underline;
+			}
+
+			div#description ul, div#description ol {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+
+			div#description li {
+				margin: 0;
+				padding: 0;
+			}
+
+		div.search {
+			color: #444444;
+			line-height: 17px;
+		}
+
+
+		/* Copyright */	
+			div#wrapper div#content div#description div#copyright {
+				font-size: 90%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			div#wrapper div#content div#description div#copyright div {
+				margin: 0;
+				font-size: 80%;
+			}
+		
+
+	/* Posts */	
+		div#wrapper div#content div.post {
+			position: relative;
+			min-height: 100px;
+			margin-bottom: 70px;
+		}
+
+			div#wrapper div#content div.post div.copy {
+				color: #6e7173;
+				padding: 10px;
+				font-size: 13px;
+				line-height: 15px;
+			}
+
+				div#wrapper div#content div.post div.copy a {
+					color: #6e7173;
+					text-decoration: underline;
+				}
+
+				div#wrapper div#content div.post div.copy p {
+					margin: 10px 0 0 0;
+					padding: 0;
+				}
+
+				div#wrapper div#content div.post div.copy pre {
+					margin: 10px 0px 10px 0px;
+					padding: 10px;
+					background-color: #e6e6e6;
+					font: normal 11px Courier, monospace;
+					overflow: auto;
+				}
+
+				div#wrapper div#content div.post div.copy > p:first-child {
+					margin-top: 0;
+				}
+
+				div#wrapper div#content div.post div.copy img {
+					max-width: 100%;
+				}
+
+
+		/* Post Title */
+			div#wrapper div#content div.post h2 {
+			}
+
+			div#wrapper div#content div.post h2 a {
+				color: #222222;
+				text-decoration: none;
+			}
+
+			div#wrapper div#content div.post h2 a:hover {
+				color: #217be8;
+				text-decoration: none;
+			}
+
+
+		/* Blockquotes */
+			div#wrapper div#content div.post blockquote {
+				font-style: italic;
+				border-left: solid 2px #555;
+				margin-left: 0;
+				padding-left: 10px;
+			}
+
+
+		/* Regular Post */
+			div#wrapper div#content div.post div.regular {
+				font-size: 100%;
+				color: #444444;
+			}
+
+
+		/* Footer */
+			div#wrapper div#content div#footer {
+				margin: 40px 0px 30px 0px;
+				text-align: center;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+				div#wrapper div#content div#footer a {
+					text-decoration: none;
+					color: #222222;
+					margin: 0 20px;
+				}
+
+					div#wrapper div#content div#footer a:hover {
+						text-decoration: underline;
+						color: #7be821;
+					}
+
+		/* flickr */	
+			.flickr_badge_image {text-align:left !important;}
+			#flickr_www {display:block; text-align:left; padding:0 10px 0 0 !important; font: 1.1em Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+			#flickr_badge_uber_wrapper a:hover,#flickr_badge_uber_wrapper a:link,#flickr_badge_uber_wrapper a:active,#flickr_badge_uber_wrapper a:visited {
+				text-decoration: none !important;
+				background: inherit !important;
+				color: #217be8;
+			}
+			#flickr_badge_wrapper {}
+			#flickr_badge_wrapper img {margin-bottom: 20px; width: 190px; height: auto;}
+		
+			
+		{CustomCSS}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="preload-01"></div>
+		<div id="contact"><h4>503-512-9090</h4></div>
+		<div id="avatar"><a href="http://en.gravatar.com/kmauthorized9" title="" target="_blank"></a></div>
+
+		<div id="header">
+			<div id="facebook">
+				<div id="fb-root"></div>
+				<div class="fb-like" data-href="http://kmauthorized.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+			</div>
+			<div id="google">
+				<g:plusone size="medium" href="http://kmauthorized.com"></g:plusone>
+			</div>
+			<div id="cse-search-form"></div>
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+			<script type="text/javascript"> 
+			  google.load('search', '1', {language : 'en'});
+			  google.setOnLoadCallback(function() {
+				var customSearchControl = new google.search.CustomSearchControl('000232118565908663882:-2rmkrhjxns');
+				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+				var options = new google.search.DrawOptions();
+				options.enableSearchboxOnly("http://google.com/cse?cx=000232118565908663882:-2rmkrhjxns");    
+				customSearchControl.draw('cse-search-form', options);
+			  }, true);
+			</script>
+			<a href="http://kmauthorized.com">
+				<img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/logo_v9_216_clear_zpse9418b10.png" width="216" alt="KM Authorized" />
+			</a>
+			<div id="client_quotes">
+				<div class="client_quote_text">
+					<big>&#147;</big><span>Keegan is extremely trustworthy. When working with an IT individual, I can't think of anything more important. He is also very competent, which is the other &#39;must&#39; for an IT guy.</span><big>&#148;</big>
+				</div>
+				<div class="client_source">
+					&ndash;&nbsp;Brooke Knight, Knight Financial
+				</div>
+				<div class="client_quote_text">
+					<big>&#147;</big><span>Keegan is an amazing resource for my business. He maintains my computers so they function with very few problems...I can't recommend his services highly enough. He has completely eliminated my IT hassles.</span><big>&#148;</big>
+				</div>
+				<div class="client_source">
+					&ndash;&nbsp;Eric Dunlap, Dunlap Mortgage<br/>
+					<a href="http://www.linkedin.com/in/keeganmullaney" target="_blank">more...</a>
+				</div>
+			</div>
+			<div id="services">
+				<div id="my_plugs">
+					<div id="left_plug"><span>Slow and buggy computer? Is it stressful to use?</span></div>
+					<div id="middle_plug"><span>Worried about viruses, malware, or identity theft?</span></div>
+					<div id="right_plug"><span>Give yourself peace of mind. Hand your stress to a trusted IT pro.</span></div>
+				</div>
+				<div id="guilt-free-it">
+					<p><big>&#147;</big><span>Guilt-free IT, hand tech stress to me</span><big>&#148;</big> includes:</p>
+					<ul>
+						<li>regular computer maintenance and monitoring for problems</li>
+						<li>dedicated support when you need it</li>
+						<li>no hourly fees, call as often as needed</li>
+					</ul>
+				</div>
+			</div>
+            <div id="paypal">
+                <script type="text/javascript" data-pp-pubid="cc1db601f1" data-pp-placementtype="800x66"> (function (d, t) {
+                "use strict";
+                var s = d.getElementsByTagName(t)[0], n = d.createElement(t);
+                n.src = "//paypal.adtag.where.com/merchant.js";
+                s.parentNode.insertBefore(n, s);
+                }(document, "script"));
+                </script>
+            </div>
+		</div>
+
+		<div id="content">
+			<div id="description">
+				<a href="http://feeds.keegoid.com/kmauthorized" title="RSS feed" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/feed-icon-16x16_zpsfe083fa6.png" alt="RSS" /></a>
+				<a href="http://twitter.com/kmauthorized" title="follow me on twitter" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/twitter_zpse1d9ea36.png" alt="Twitter" /></a>
+				<a href="http://www.facebook.com/kmauthorized" title="like KM Authorized on Facebook" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/facebook_zps86a8020f.png" alt="Facebook" /></a>
+				<a href="http://www.linkedin.com/in/keeganmullaney" title="follow my career on LinkedIn" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/linkedin_zps177537dd.png" alt="LinkedIn" /></a>
+				<a href="http://www.tumblr.com/follow/{Name}" title="follow me on Tumblr" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/tumblr_zps9b0b8bf6.png" alt="Tumblr" /></a>
+				<a href="http://klout.com/keegoid" title="see my klout" target="_blank"><img src="http://i1290.photobucket.com/albums/b523/keegoid/KMAuthorized/klout_zpsea234eb0.png" alt="Klout" /></a><br/>
+				{block:HasPages}
+					{block:Pages}
+						<a href="{URL}">{Label}</a><br/>
+					{/block:Pages}
+				{/block:HasPages}
+				<a href="/mobile" title="for devices with small screens">mobile</a><br/>
+				<a href="/archive">archive</a><br/>
+    			<a href="http://domains.kmauthorized.com/">domains</a><br/>
+				<a href="http://keegoid.com/tech/">recommended tech</a>
+
+				<div id="google_translate_element"></div>
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+					  new google.translate.TranslateElement({
+						pageLanguage: 'en'
+					  }, 'google_translate_element');
+					}
+				</script>
+				<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+				{block:Description}
+					{Description}
+				{/block:Description}
+				<br/>
+
+				<h2>Top Tags</h2>
+				<div class="spacer">
+					<ol>
+						<li><a href="/tagged/computing">computing</a></li>
+						<li><a href="/tagged/Google">Google</a></li>
+						<li><a href="/tagged/technology">technology</a></li>
+						<li><a href="/tagged/health">health</a></li>
+						<li><a href="/tagged/software">software</a></li>
+						<li><a href="/tagged/features">features</a></li>
+						<li><a href="/tagged/communication">communication</a></li>
+						<li><a href="/tagged/tools">tools</a></li>
+						<li><a href="/tagged/environment">environment</a></li>
+						<li><a href="/tagged/web%20presence">web presence</a></li>
+					</ol>
+				</div>
+
+				&nbsp;
+
+				<h2 id="os">Misc Stuff</h2>
+				<div id="otherstuff" class="spacer">
+					<ol>
+						<li><a href="http://eepurl.com/dvORP" target="_blank">Guilt-free IT Reminders</a></li>
+						<li><a href="http://twitter.com/#!/kmauthorized/lists" target="_blank">Twitter Lists</a></li>
+						<li><a href="http://secure.newegg.com/WishList/PublicWishDetail.aspx?WishListNumber=13232165" target="_blank">Current PC</a></li>
+					</ol>
+				</div>
+
+				&nbsp;
+
+				<div id="copyright">
+					&copy; {CopyrightYears}<br/>
+					<a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a>
+					<div xmlns:cc="http://creativecommons.org/ns#" about="http://kmauthorized.com/">
+						<a rel="cc:attributionURL" property="cc:attributionName" href="http://kmauthorized.com">kmauthorized.com</a> / <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>
+					</div>
+					<div>
+						Valid&nbsp;&nbsp;<a href="http://validator.w3.org/check?uri=referer" target="_blank">XHTML</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="regular">
+					<h2>About KM Authorized</h2>
+					<p>KM Authorized provides dedicated IT support and proactive maintenance for individuals and small businesses in the Portland, Oregon area.</p>
+					<p>&quot;Guilt-free IT, hand tech stress to me&quot; is about proactively maintaining systems to prevent problems and improve reliability. Clients can call as often as needed and pay a fixed monthly fee for support. Often times this works well for businesses that need predictable, budget-able, responsive IT support and maintenance.</p>
+					<p>Clients get to avoid technology stress and focus their time on other stuff that is more important to them like running their business.</p>
+					<br/>
+					<h4>About Keegan Mullaney</h4>
+					<p>Technology director for SMB / IT consultant &middot; Nov 2004 to present</p>
+					<p>Keegan started his career in 1983 with the Texas Instruments Home Computer model number 99/4A. Okay, okay...he was only five, but since then not a day has gone by that he didn't think about computers, especially once the Internet arrived.</p>
+					<h4>Technical Skills</h4>
+					<ul>
+						<li>Business Development &amp; Admin</li>
+						<li>Monitoring and Automation (GFI MAX)</li>
+						<li>Big Data >200TB NAS</li>
+						<li>10GbE Networks</li>
+						<li>Data Security &amp; Loss Prevention</li>
+						<li>Systems Builder / Integration</li>
+						<li>Remote User Support &amp; Customer Service</li>
+						<li>Desktop/Network Troubleshooting</li>
+						<li>Asset Management</li>
+						<li>Proactive Maintenance/Upgrades</li>
+						<li>Commercial Wifi Installs</li>
+						<li>Software &amp; Cloud Training</li>
+						<li>Cloud Migrations &amp; Administration</li>
+						<li>Unified Communications</li>
+						<li>Web Standards (XHTML, CSS, JS)</li>
+						<li>DNS &amp; Domain Administration</li>
+						<li>Social Marketing &amp; Training</li>
+						<li>Windows Patch Management</li>
+						<li>Desktop Migrations (XP to 7)</li>
+						<li>Desktop Imaging / Offsite Backups</li>
+						<li>Support/Configure Industry Apps</li>
+						<li>Understand Business Processes &amp; Supporting IT Infrastructure</li>
+						<li>Sales/Consulting</li>
+					</ul>
+					<h4>Key Vendor Partners</h4>
+					<ul>
+						<li>XyXEL</li>
+						<li>QNAP</li>
+						<li>Western Digital</li>
+						<li>Intel</li>
+						<li>Microsoft</li>
+						<li>Lenovo</li>
+						<li>Synnex</li>
+					</ul>
+					<h4>Professional Background</h4>
+					<p>For seven years Keegan has run an IT support business in Portland with a focus on proactively maintaining the complete Information Technology systems of businesses on the West coast. &quot;Guilt-free IT, hand tech stress to me&quot; has been the beat to his step.</p>
+					<p>Keegan has much hands-on experience in noncertified areas, supporting the IT systems of a wide range of businesses: mortgage brokers, medical offices, RV parks, and construction companies. He's worked with over 40 different companies providing for their every technology related need, acting as an outsourced IT admin.</p>
+					<p>He's driven to work hard, achieve quality results, and do so in an efficient and responsive manner that clients appreciate. Keegan has received many thank you letters describing him as passionate, talented, thorough, prepared, personable, and able to communicate complex IT concepts so anyone can understand.</p>
+					<h4>Education</h4>
+					<p>2001-05<br/>Bachelor of Science, Business Administration in Management Information Systems<br/>Minor, Computer Science<br/>Oregon State University, Corvallis, OR</p>
+				</div>
+			</div>
+
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+
+	<!-- facebook comments and Like button -->
+	<script type="text/javascript">
+		(function(d){
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/all.js#appId=105082882934209&xfbml=1";
+		d.getElementsByTagName('head')[0].appendChild(js);
+		}(document));
+	</script>
+
+	<!-- google +1 -->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+    <!-- google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-3900165-42', 'kmauthorized.com');
+      ga('send', 'pageview');
+    
+    </script>
+
+</body>
+</html>
